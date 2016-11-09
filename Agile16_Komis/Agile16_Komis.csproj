@@ -76,13 +76,45 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="src\wwwroot\advancedSearch.aspx" />
+    <Content Include="src\wwwroot\contact.aspx" />
+    <Content Include="src\wwwroot\offer.aspx" />
     <Content Include="Web.config" />
+    <Content Include="src\wwwroot\index.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\wwwroot\advancedSearch.aspx.cs">
+      <DependentUpon>advancedSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\advancedSearch.aspx.designer.cs">
+      <DependentUpon>advancedSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\wwwroot\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\wwwroot\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\wwwroot\offer.aspx.cs">
+      <DependentUpon>offer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\offer.aspx.designer.cs">
+      <DependentUpon>offer.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

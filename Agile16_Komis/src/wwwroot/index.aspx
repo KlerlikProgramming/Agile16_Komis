@@ -8,9 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        hehehehehello world
-    </div>
+        <div id="header" onload="headerOnLoad"><input /> <button>Szukaj</button> </div>
+        <div id ="menu" onload="menuOnLoad"><a href="index.aspx">Strona główna </a><a href="advancedSearch.aspx">Wyszukiwanie zaawansowane</a><a href ="contact.aspx">Kontakt</a></div>
+        <div id ="filters" onload="filtersOnLoad"></div>
+        <div id ="offers" onload ="offersOnLoad"></div>
+        <div id ="categories" onload="categoriesOnLoad"></div>
     </form>
 </body>
 </html>
