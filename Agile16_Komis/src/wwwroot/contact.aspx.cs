@@ -11,7 +11,7 @@ namespace Agile16_Komis.src.wwwroot
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Agile16_Komis.wwwroot.index" %>
-
+<link href="../style/Style.css" rel="stylesheet" type="text/css" />
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="header" onload="headerOnLoad"><input /> <button>Szukaj</button> </div>
+        <div id ="header" onload="headerOnLoad"><input id="searchInput"/> <button onclick="searchButtonClick">Szukaj</button> </div>
         <div id ="menu" onload="menuOnLoad"><a href="index.aspx">Strona główna </a><a href="advancedSearch.aspx">Wyszukiwanie zaawansowane</a><a href ="contact.aspx">Kontakt</a></div>
         <div id ="filters" onload="filtersOnLoad"></div>
         <div id ="offers" onload ="offersOnLoad"></div>

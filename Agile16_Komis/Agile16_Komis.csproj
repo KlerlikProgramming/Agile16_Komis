@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="src\style\Style.css" />
     <Content Include="src\wwwroot\advancedSearch.aspx" />
     <Content Include="src\wwwroot\contact.aspx" />
     <Content Include="src\wwwroot\offer.aspx" />

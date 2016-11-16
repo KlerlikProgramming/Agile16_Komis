@@ -13,5 +13,10 @@ namespace Agile16_Komis.wwwroot
         {
 
         }
+
+        protected void searchButtonClick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
