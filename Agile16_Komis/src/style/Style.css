@@ -4,3 +4,15 @@
 #categories{
     color:red; 
 }
+
+#menu{
+    font-family:Calibri;
+    font-size:xx-large;
+    background-color:red;
+    color:red;
+}
+
+#header{
+    align-items:center;
+    width: 50%;
+}

@@ -11,12 +11,17 @@ namespace Agile16_Komis.wwwroot
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void searchButtonClick(object sender, EventArgs e)
         {
-            
+            searchInput.Text = "MAM";
+        }
+
+        protected void searchInputTextChange(object sender, EventArgs e)
+        {
+            searchInput.Text = "Piotrek";
         }
     }
 }

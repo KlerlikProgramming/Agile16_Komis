@@ -8,9 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+    <div id ="menu" onload="menuOnLoad"><a href="index.aspx">Strona główna </a><a href="advancedSearch.aspx">Wyszukiwanie zaawansowane</a><a href ="contact.aspx">Kontakt</a></div>
+    <div id ="header" onload="headerOnLoad">
+            <asp:TextBox ID="searchInput" runat="server" OnTextChanged="searchInputTextChange"/> 
+            <asp:Button runat="server" ID="searchButton" OnClick="searchButtonClick" Text="Szukaj"/>
+        </div>
     </form>
 </body>
 </html>
