@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShopMaster.Master.cs" Inherits="Agile16_Komis.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="title">
+            <h2>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</h2>
+            <p>Witamy w serwisie!!!</p>
+        </div>
+        <div id="addressBar">
+            <a href="/">Strona tytułowa</a>
+            <a href="/index">Sklep</a>
+            <a href="/advancedSearch">Wyszukiwanie zaawansowane</a>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
