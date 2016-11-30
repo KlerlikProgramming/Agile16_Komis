@@ -19,8 +19,14 @@
             <a href="/">Strona tytułowa</a>
             <a href="/index">Sklep</a>
             <a href="/advancedSearch">Wyszukiwanie zaawansowane</a>
+
+        </div>
+        <div id ="header" onload="headerOnLoad">
+            <asp:TextBox ID="searchInput" runat="server" OnTextChanged="searchInputTextChange"/> 
+            <asp:Button runat="server" ID="searchButton" OnClick="searchButtonClick" Text="Szukaj"/>
         </div>
     <div>
+        
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
         
