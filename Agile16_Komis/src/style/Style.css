@@ -1,8 +1,9 @@
-﻿body {
+﻿#categories{
+    color:red; 
 }
 
-#categories{
-    color:red; 
+p{
+    background-color:blue;
 }
 
 #menu{
@@ -12,7 +13,9 @@
     color:red;
 }
 
-#header{
+#AddressBar{
+    background-color:gray;
     align-items:center;
     width: 50%;
 }
+

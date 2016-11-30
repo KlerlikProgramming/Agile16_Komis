@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</title>
+    <link rel="stylesheet" type="text/css" href="~/src/style/Style.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
         
     </asp:ContentPlaceHolder>
@@ -15,7 +16,7 @@
             <h2>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</h2>
             <p>Witamy w serwisie!!!</p>
         </div>
-        <div id="addressBar">
+        <div id="AddressBar" class="AddressBar">
             <a href="/">Strona tytułowa</a>
             <a href="/index">Sklep</a>
             <a href="/advancedSearch">Wyszukiwanie zaawansowane</a>
