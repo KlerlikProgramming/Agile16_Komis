@@ -84,6 +84,7 @@
     <Content Include="src\wwwroot\index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Car.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
