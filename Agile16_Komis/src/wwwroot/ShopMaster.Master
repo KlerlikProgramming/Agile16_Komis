@@ -11,8 +11,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div id="title">
+    <form id="shop" runat="server">
+        <div id="title" class="title">
             <h2>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</h2>
             <p>Witamy w serwisie!!!</p>
         </div>
@@ -22,12 +22,11 @@
             <a href="/advancedSearch">Wyszukiwanie zaawansowane</a>
 
         </div>
-        <div id ="header" onload="headerOnLoad">
+        <div id ="searcher" onload="searcherOnLoad">
             <asp:TextBox ID="searchInput" runat="server" OnTextChanged="searchInputTextChange"/> 
             <asp:Button runat="server" ID="searchButton" OnClick="searchButtonClick" Text="Szukaj"/>
         </div>
     <div>
-        
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
         
