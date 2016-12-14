@@ -22,11 +22,18 @@ namespace Agile16_Komis.src.wwwroot
         {
             DataTable dt = new DataTable();
             DataRow dr = null;
-            foreach (string s in carsDataGridView.Columns.ToString())
-                dt.Columns.Add(new DataColumn((s), typeof(string)));
-            dr = dt.NewRow();
-            dr[0] = "coś";
-            dt.Rows.Add(dr);
+            for (int i = 0; i < carsDataGridView.Columns.Count; i++)
+            {
+                dt.Columns.Add(new DataColumn(carsDataGridView.Columns[i].ToString(), typeof(string)));
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                dr = dt.NewRow();
+                dr[1] = "coś";
+                dr[i] = "nie";
+                dt.Rows.Add(dr);
+            }
+            ViewState["CurrentTable"] = dt;
 
             carsDataGridView.DataSource = dt;
             carsDataGridView.DataBind();
