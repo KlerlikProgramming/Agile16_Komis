@@ -13,6 +13,15 @@ namespace Agile16_Komis.src.wwwroot {
     public partial class index {
         
         /// <summary>
+        /// cos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cos;
+        
+        /// <summary>
         /// carsDataGridView control.
         /// </summary>
         /// <remarks>
