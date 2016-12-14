@@ -2,10 +2,18 @@
     color:red; 
 }
 
-p{
-    background-color:blue;
-}
+#shop{
+    padding:20px;
+    margin:40px;
+    margin-top:80px;
 
+    border-radius:18px;
+    border-style:groove;
+    border-color:#5bd0ce;
+
+    background-color:#CEFFFE;
+    font-family:'Comic Sans MS';
+}
 #menu{
     font-family:Calibri;
     font-size:xx-large;
@@ -13,9 +21,12 @@ p{
     color:red;
 }
 
-#AddressBar{
-    background-color:gray;
+.AddressBar{
+    border-radius:6px;
+    background-color:#5bd0ce;
     align-items:center;
-    width: 50%;
+    align-self:center;
+    width: 70%;
 }
+
 

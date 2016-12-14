@@ -17,16 +17,16 @@
             <p>Witamy w serwisie!!!</p>
         </div>
         <div id="AddressBar" class="AddressBar">
-            <a href="/">Strona tytułowa</a>
-            <a href="/index">Sklep</a>
-            <a href="/advancedSearch">Wyszukiwanie zaawansowane</a>
+            <a href="<%Page.ResolveUrl("~/default.aspx");%>">Strona tytułowa</a>
+            <a href="<%Page.ResolveUrl("~/index.aspx");%>">Sklep</a>
+            <a href="<%Page.ResolveUrl("~/advancedSearch.aspx");%>">Wyszukiwanie zaawansowane</a>
 
         </div>
         <div id ="searcher" onload="searcherOnLoad">
             <asp:TextBox ID="searchInput" runat="server" OnTextChanged="searchInputTextChange"/> 
             <asp:Button runat="server" ID="searchButton" OnClick="searchButtonClick" Text="Szukaj"/>
         </div>
-    <div>
+    <div class="contentPlaceHolder">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
         
