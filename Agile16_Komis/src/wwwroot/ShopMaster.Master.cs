@@ -11,7 +11,7 @@ namespace Agile16_Komis
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Context.User.Identity.IsAuthenticated) admin.Text = "You're a Jedi, Frodo";
         }
         protected void searchButtonClick(object sender, EventArgs e)
         {

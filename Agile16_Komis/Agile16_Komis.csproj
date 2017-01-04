@@ -73,6 +73,8 @@
     <Content Include="Models\DBgeneration.sql" />
     <Content Include="packages.config" />
     <Content Include="src\wwwroot\default.aspx" />
+    <Content Include="src\wwwroot\Logon.aspx" />
+    <Content Include="src\wwwroot\Register.aspx" />
     <Content Include="src\wwwroot\ShopMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -102,6 +104,20 @@
     </Compile>
     <Compile Include="src\wwwroot\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\wwwroot\Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\wwwroot\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="src\wwwroot\ShopMaster.Master.cs">
       <DependentUpon>ShopMaster.Master</DependentUpon>

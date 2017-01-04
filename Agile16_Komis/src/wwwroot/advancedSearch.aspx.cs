@@ -14,5 +14,12 @@ namespace Agile16_Komis.src.wwwroot
 
         }
 
+        protected void searchInputTextChange(object sender, EventArgs e) {
+
+        }
+
+        protected void searchButtonClick(object sender, EventArgs e) {
+
+        }
     }
 }

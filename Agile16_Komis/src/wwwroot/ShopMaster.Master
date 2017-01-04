@@ -15,6 +15,7 @@
         <div id="title" class="title">
             <h2>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</h2>
             <p>Witamy w serwisie!!!</p>
+            <asp:Label ID="admin" runat="server"></asp:Label>
         </div>
         <div id="AddressBar" class="AddressBar">
             <a href="<%Page.ResolveUrl("~/default.aspx");%>">Strona tytułowa</a>
