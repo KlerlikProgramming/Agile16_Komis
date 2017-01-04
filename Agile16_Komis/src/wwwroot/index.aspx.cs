@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Agile16_Komis.wwwroot
+namespace Agile16_Komis.src.wwwroot
 {
     public partial class index : System.Web.UI.Page
     {
