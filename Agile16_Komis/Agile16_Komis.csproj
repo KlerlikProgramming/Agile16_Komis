@@ -94,6 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Car.cs" />
+    <Content Include="App_Code\ListCar.cs" />
+    <Content Include="App_Code\Search.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

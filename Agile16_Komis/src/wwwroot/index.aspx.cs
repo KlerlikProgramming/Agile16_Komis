@@ -26,15 +26,14 @@ namespace Agile16_Komis.src.wwwroot
             {
                 dt.Columns.Add(new DataColumn(carsDataGridView.Columns[i].ToString(), typeof(string)));
             }
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
                 dr = dt.NewRow();
-                dr[1] = "coś";
+                dr[1] = "tak";
                 dr[i] = "nie";
                 dt.Rows.Add(dr);
             }
-            ViewState["CurrentTable"] = dt;
-
+            carsDataGridView.Controls.Clear();
             carsDataGridView.DataSource = dt;
             carsDataGridView.DataBind();
         }

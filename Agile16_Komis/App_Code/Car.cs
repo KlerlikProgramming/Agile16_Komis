@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Agile16_Komis.App_Code
 {
@@ -23,13 +25,13 @@ namespace Agile16_Komis.App_Code
             set { mark = value; }
         }
         private string model;
-        private string Model
+        public string Model
         {
             get { return model; }
             set { model = value; }
         }
         private int yearProduction;
-        public int YeatProduction
+        public int YearProduction
         {
             get { return yearProduction; }
             set { yearProduction = value; }
@@ -77,12 +79,17 @@ namespace Agile16_Komis.App_Code
 
         public override string ToString()
         {
-            string data = Mark + " " + Model + " " + YeatProduction.ToString() + " " + EngineType + " " + TransmissionModel + " " + TransmissionGears.ToString() + " " + FuelType + " " + Chassis + " " + Color;
+            string data = Mark + " " + Model + " " + YearProduction.ToString() + " " + EngineType + " " + TransmissionModel + " " + TransmissionGears.ToString() + " " + FuelType + " " + Chassis + " " + Color;
             foreach(string item in photo)
             {
                 data += " " + item;
             }
             return data;
+        }
+
+        public string ToStringMarkAndModel()
+        {
+            return Mark + " " + Model;
         }
     }
 }
