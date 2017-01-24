@@ -15,12 +15,12 @@ namespace Agile16_Komis
         }
         protected void searchButtonClick(object sender, EventArgs e)
         {
-            searchInput.Text = "MAM";
+            //searchInput.Text = "MAM";
         }
 
         protected void searchInputTextChange(object sender, EventArgs e)
         {
-            searchInput.Text = "Piotrek";
+            //searchInput.Text = "Piotrek";
         }
     }
 }

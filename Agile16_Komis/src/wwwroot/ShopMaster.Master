@@ -2,6 +2,40 @@
 
 <!DOCTYPE html>
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+        $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#searchInput" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
 <html>
 <head runat="server">
     <title>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</title>
@@ -24,9 +58,10 @@
 
         </div>
         <div id ="searcher" onload="searcherOnLoad">
-            <asp:TextBox ID="searchInput" runat="server" OnTextChanged="searchInputTextChange"/> 
+            <input ID="searchInput" runat="server" OnTextChanged="searchInputTextChange"/> 
             <asp:Button runat="server" ID="searchButton" OnClick="searchButtonClick" Text="Szukaj"/>
         </div>
+      
     <div class="contentPlaceHolder">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
