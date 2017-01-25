@@ -19,13 +19,14 @@ namespace Agile16_Komis.App_Code
 
         public static List<Car> GetLatestOffer(int numberOfCar)
         {
-            if (numberOfCar < listCar.Count)
+            if (numberOfCar > listCar.Count)
                 numberOfCar = listCar.Count;
-            IEnumerable<Car> temp = from Car car in listCar
-                                    orderby car.DateAdded descending
-                                    select car;
+            //IEnumerable<Car> temp = from Car car in listCar
+            //                        orderby car.DateAdded descending
+            //                        select car;
+            IEnumerable<Car> temp = listCar.OrderByDescending(x => x.DateAdded).Take(numberOfCar);
 
-            return temp.Take(numberOfCar).ToList();
+            return temp.ToList();
         }
 
         public static void ClearList()
@@ -33,7 +34,7 @@ namespace Agile16_Komis.App_Code
             listCar.Clear();
         }
 
-        public static Car GetCar(int id)
+        public static Car GetCarById(int id)
         {
             return listCar.Find(x => x.ID == id);
         }

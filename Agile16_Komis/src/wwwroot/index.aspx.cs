@@ -26,7 +26,10 @@ namespace Agile16_Komis.src.wwwroot
 
         private void AddCarsToDataBase()
         {
-            ListCar.AddCar(new Car{ Model = "Stilo", Brand = "Fiat", Chassis = "Kombi", Color = "Granatowy", EngineFuel = 1600, EngineType = "Benzyna", TransmissionModel = "Manual", TransmissionGears = 6, YearProduction = 2004, Price = 5000 });
+            for (int i = 0; i < 10; i++)
+            {
+                ListCar.AddCar(new Car { Model = "Stilo", Brand = "Fiat", Chassis = "Kombi", Color = "Granatowy", EngineFuel = 1600, EngineType = "Benzyna", TransmissionModel = "Manual", TransmissionGears = 6, YearProduction = 2004, Price = 5000 });
+            }
         }
 
         protected void SetInitialRow()
