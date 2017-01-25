@@ -9,14 +9,24 @@ namespace Agile16_Komis.App_Code
     {
         public static List<Car> listCar = new List<Car>();
 
-        public static IEnumerable<Car> GetSearchResult(string s)
+        public static int idCar = 0;
+
+        public static bool AddCar(Car car)
         {
-            IEnumerable<Car> result = from Car car in listCar
-                                      where car.Model.IndexOf(s) != -1
-                                      where car.Mark.IndexOf(s) != -1
-                                      orderby car.Mark, car.Model
-                                      select car;
-            return result;
+            listCar.Add(car);
+            return true;
         }
+
+        public static List<Car> GetLatestOffer(int numberOfCar)
+        {
+            if (numberOfCar < listCar.Count)
+                numberOfCar = listCar.Count;
+            IEnumerable<Car> temp = from Car car in listCar
+                                    orderby car.DateAdded descending
+                                    select car;
+
+            return temp.Take(numberOfCar).ToList();
+        }
+
     }
 }

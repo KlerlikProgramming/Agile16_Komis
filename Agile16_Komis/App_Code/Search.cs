@@ -7,18 +7,18 @@ namespace Agile16_Komis.App_Code
 {
     public static class Search
     {
-        public enum TypeOfSearch {Model, Mark, YearProduction, EngineType, TransmissionModel, TransmissionGears, FuelType, Chassis, Color }
-        public static IEnumerable<Car> GetSearchResult(string s)
+        public enum TypeOfSearch {Model, Mark, YearProduction, EngineType, TransmissionModel, TransmissionGears, Chassis, Color }
+        public static List<Car> GetSearchResult(string s)
         {
             IEnumerable<Car> result = from Car car in ListCar.listCar
                                       where car.Model.IndexOf(s) != -1
                                       where car.Mark.IndexOf(s) != -1
                                       orderby car.Mark, car.Model
                                       select car;
-            return result;
+            return result.ToList();
         }
 
-        public static IEnumerable<Car> AdvancedSearch(List<Car> carList, TypeOfSearch typeOfSearch, string text)
+        public static List<Car> AdvancedSearch(List<Car> carList, TypeOfSearch typeOfSearch, string text)
         {
             IEnumerable<Car> result = from Car car in carList
                                       select car;
@@ -50,11 +50,6 @@ namespace Agile16_Komis.App_Code
                         result = result.Where(x => x.EngineType == text);
                         break;
                     }
-                case (TypeOfSearch.FuelType):
-                    {
-                        result = result.Where(x => x.FuelType == text);
-                        break;
-                    }
                 case (TypeOfSearch.TransmissionGears):
                     {
                         result = result.Where(x => x.TransmissionGears.ToString() == text);
@@ -73,7 +68,7 @@ namespace Agile16_Komis.App_Code
                 default:
                     break;
             }
-            return result;
+            return result.ToList();
         }
         
     }
