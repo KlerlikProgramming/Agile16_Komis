@@ -14,7 +14,7 @@ namespace Agile16_Komis.App_Code
         }
 
         private int id;
-        private string mark;
+        private string brand;
         private string model;
         private int yearProduction;
         private string engineType;
@@ -32,10 +32,10 @@ namespace Agile16_Komis.App_Code
             get { return id; }
             private set { id = value; }
         }
-        public string Mark
+        public string Brand
         {
-            get { return mark; }
-            set { mark = value; }
+            get { return brand; }
+            set { brand = value; }
         }
         public string Model
         {
@@ -99,7 +99,7 @@ namespace Agile16_Komis.App_Code
 
         public override string ToString()
         {
-            string data = Mark + " " + Model + " " + YearProduction.ToString() + " " + EngineType + " " + TransmissionModel + " " + TransmissionGears.ToString() + " " + Chassis + " " + Color;
+            string data = Brand + " " + Model + " " + YearProduction.ToString() + " " + EngineType + " " + TransmissionModel + " " + TransmissionGears.ToString() + " " + Chassis + " " + Color;
             foreach(string item in photo)
             {
                 data += " " + item;
@@ -109,7 +109,7 @@ namespace Agile16_Komis.App_Code
 
         public string ToStringMarkAndModel()
         {
-            return Mark + " " + Model;
+            return Brand + " " + Model;
         }
     }
 }

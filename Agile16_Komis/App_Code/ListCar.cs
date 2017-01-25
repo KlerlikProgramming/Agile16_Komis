@@ -28,5 +28,15 @@ namespace Agile16_Komis.App_Code
             return temp.Take(numberOfCar).ToList();
         }
 
+        public static void ClearList()
+        {
+            listCar.Clear();
+        }
+
+        public static Car GetCar(int id)
+        {
+            return listCar.Find(x => x.ID == id);
+        }
+
     }
 }

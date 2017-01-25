@@ -12,8 +12,8 @@ namespace Agile16_Komis.App_Code
         {
             IEnumerable<Car> result = from Car car in ListCar.listCar
                                       where car.Model.IndexOf(s) != -1
-                                      where car.Mark.IndexOf(s) != -1
-                                      orderby car.Mark, car.Model
+                                      where car.Brand.IndexOf(s) != -1
+                                      orderby car.Brand, car.Model
                                       select car;
             return result.ToList();
         }
@@ -32,7 +32,7 @@ namespace Agile16_Komis.App_Code
                     }
                 case (TypeOfSearch.Mark):
                     {
-                        result = result.Where(x => x.Mark == text);
+                        result = result.Where(x => x.Brand == text);
                         break;
                     }
                 case (TypeOfSearch.Chassis):
