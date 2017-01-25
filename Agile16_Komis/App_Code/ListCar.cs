@@ -17,13 +17,19 @@ namespace Agile16_Komis.App_Code
             return true;
         }
 
+        public static bool AddCar(int id, Car car)
+        {
+            listCar.RemoveAt(listCar.FindIndex(x => x.ID == id));
+            car.SetId(id);
+            AddCar(car);
+            return true;
+        }
+
         public static List<Car> GetLatestOffer(int numberOfCar)
         {
             if (numberOfCar > listCar.Count)
                 numberOfCar = listCar.Count;
-            //IEnumerable<Car> temp = from Car car in listCar
-            //                        orderby car.DateAdded descending
-            //                        select car;
+
             IEnumerable<Car> temp = listCar.OrderByDescending(x => x.DateAdded).Take(numberOfCar);
 
             return temp.ToList();
@@ -38,6 +44,8 @@ namespace Agile16_Komis.App_Code
         {
             return listCar.Find(x => x.ID == id);
         }
+
+
 
     }
 }

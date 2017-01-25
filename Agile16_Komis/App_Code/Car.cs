@@ -111,5 +111,10 @@ namespace Agile16_Komis.App_Code
         {
             return Brand + " " + Model;
         }
+
+        public void SetId(int id)
+        { 
+            ID = id;
+        }
     }
 }

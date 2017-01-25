@@ -9,6 +9,7 @@ namespace Agile16_Komis
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Context.User.Identity.IsAuthenticated) admin.Text = "You're a Jedi, Frodo";
