@@ -72,7 +72,7 @@
     </Content>
     <Content Include="Models\DBgeneration.sql" />
     <Content Include="packages.config" />
-    <Content Include="src\AddOffer.aspx" />
+    <Content Include="src\wwwroot\AddOffer.aspx" />
     <Content Include="src\wwwroot\default.aspx" />
     <Content Include="src\wwwroot\Logon.aspx" />
     <Content Include="src\wwwroot\Register.aspx" />
@@ -101,11 +101,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\AddOffer.aspx.cs">
+    <Compile Include="src\wwwroot\AddOffer.aspx.cs">
       <DependentUpon>AddOffer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="src\AddOffer.aspx.designer.cs">
+    <Compile Include="src\wwwroot\AddOffer.aspx.designer.cs">
       <DependentUpon>AddOffer.aspx</DependentUpon>
     </Compile>
     <Compile Include="src\wwwroot\default.aspx.cs">
