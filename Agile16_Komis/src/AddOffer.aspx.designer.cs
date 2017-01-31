@@ -7,99 +7,126 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Agile16_Komis.src.wwwroot {
+namespace Agile16_Komis.src {
     
     
-    public partial class offer {
+    public partial class AddOffer {
         
         /// <summary>
-        /// model control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label model;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// brand control.
+        /// modelTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label brand;
+        protected global::System.Web.UI.WebControls.TextBox modelTextBox;
         
         /// <summary>
-        /// yearProduction control.
+        /// brandTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label yearProduction;
+        protected global::System.Web.UI.WebControls.TextBox brandTextBox;
         
         /// <summary>
-        /// engineType control.
+        /// yearProductionTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label engineType;
+        protected global::System.Web.UI.WebControls.TextBox yearProductionTextBox;
         
         /// <summary>
-        /// engineFuel control.
+        /// engineTypeTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label engineFuel;
+        protected global::System.Web.UI.WebControls.TextBox engineTypeTextBox;
         
         /// <summary>
-        /// transmissionModel control.
+        /// engineFuelTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label transmissionModel;
+        protected global::System.Web.UI.WebControls.TextBox engineFuelTextBox;
         
         /// <summary>
-        /// transmissionGears control.
+        /// transmissionModelTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label transmissionGears;
+        protected global::System.Web.UI.WebControls.TextBox transmissionModelTextBox;
         
         /// <summary>
-        /// chassis control.
+        /// transmissionGearsTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label chassis;
+        protected global::System.Web.UI.WebControls.TextBox transmissionGearsTextBox;
         
         /// <summary>
-        /// color control.
+        /// chassisTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label color;
+        protected global::System.Web.UI.WebControls.TextBox chassisTextBox;
         
         /// <summary>
-        /// price control.
+        /// colorTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label price;
+        protected global::System.Web.UI.WebControls.TextBox colorTextBox;
+        
+        /// <summary>
+        /// priceTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox priceTextBox;
+        
+        /// <summary>
+        /// applyButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button applyButton;
+        
+        /// <summary>
+        /// cancelButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cancelButton;
     }
 }

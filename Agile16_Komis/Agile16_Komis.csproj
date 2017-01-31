@@ -72,6 +72,7 @@
     </Content>
     <Content Include="Models\DBgeneration.sql" />
     <Content Include="packages.config" />
+    <Content Include="src\AddOffer.aspx" />
     <Content Include="src\wwwroot\default.aspx" />
     <Content Include="src\wwwroot\Logon.aspx" />
     <Content Include="src\wwwroot\Register.aspx" />
@@ -93,13 +94,20 @@
     <Content Include="src\wwwroot\index.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Car.cs" />
-    <Content Include="App_Code\ListCar.cs" />
-    <Content Include="App_Code\Search.cs" />
+    <Compile Include="App_Code\Car.cs" />
+    <Compile Include="App_Code\ListCar.cs" />
+    <Compile Include="App_Code\Search.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\AddOffer.aspx.cs">
+      <DependentUpon>AddOffer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\AddOffer.aspx.designer.cs">
+      <DependentUpon>AddOffer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="src\wwwroot\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

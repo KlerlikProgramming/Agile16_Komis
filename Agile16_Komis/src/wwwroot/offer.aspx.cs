@@ -11,7 +11,19 @@ namespace Agile16_Komis.src.wwwroot
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int carID = Convert.ToInt32(Request["id"]);
+            App_Code.Car car = App_Code.ListCar.GetCarById(carID);
 
+            model.Text = car.Model;
+            brand.Text = car.Brand;
+            yearProduction.Text = car.YearProduction.ToString();
+            engineType.Text = car.EngineType;
+            engineFuel.Text = car.EngineFuel.ToString();
+            transmissionModel.Text = car.TransmissionModel;
+            transmissionGears.Text = car.TransmissionGears.ToString();
+            chassis.Text = car.Chassis;
+            color.Text = car.Color;
+            price.Text = car.Price.ToString();
         }
     }
 }
