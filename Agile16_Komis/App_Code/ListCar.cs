@@ -52,8 +52,5 @@ namespace Agile16_Komis.App_Code
         {
             return listCar.Find(x => x.ID == id);
         }
-
-
-
     }
 }

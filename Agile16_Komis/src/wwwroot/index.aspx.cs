@@ -12,28 +12,21 @@ namespace Agile16_Komis.src.wwwroot
     public partial class index : System.Web.UI.Page
     {
         List<Car> list;
-        
+        const int numberOfCar = 6;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
             {
-                AddCarsToDataBase();
+                list = ListCar.GetLatestOffer(numberOfCar);
                 SetInitialRow();
             }
         }
-
-        private void AddCarsToDataBase()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                ListCar.AddCar(new Car { Model = "Stilo", Brand = "Fiat", Chassis = "Kombi", Color = "Granatowy", EngineFuel = 1600, EngineType = "Benzyna", TransmissionModel = "Manual", TransmissionGears = 6, YearProduction = 2004, Price = 5000 });
-            }
-        }
+        
 
         protected void SetInitialRow()
         {
-            const int numberOfCar = 6;
-            list = ListCar.GetLatestOffer(numberOfCar);
+            
 
             DataTable dt = new DataTable();
             DataRow dr = null;
@@ -64,6 +57,11 @@ namespace Agile16_Komis.src.wwwroot
         public void AddOfferButtonAction (object sender, EventArgs e) {
             Server.Transfer("AddOffer.aspx");
         }
-        
+
+        protected void carsDataGridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridView gv = sender as GridView;
+            Server.Transfer("offer.aspx?id=0"/*+list.ElementAt(gv.SelectedIndex).ID.ToString()*/);
+        }
     }
 }
