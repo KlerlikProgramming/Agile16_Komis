@@ -90,6 +90,7 @@
     <Content Include="src\wwwroot\advancedSearch.aspx" />
     <Content Include="src\wwwroot\contact.aspx" />
     <Content Include="src\wwwroot\offer.aspx" />
+    <Content Include="src\wwwroot\ShopPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="src\wwwroot\index.aspx" />
   </ItemGroup>
@@ -164,6 +165,13 @@
     </Compile>
     <Compile Include="src\wwwroot\offer.aspx.designer.cs">
       <DependentUpon>offer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\wwwroot\ShopPage.aspx.cs">
+      <DependentUpon>ShopPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\wwwroot\ShopPage.aspx.designer.cs">
+      <DependentUpon>ShopPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
