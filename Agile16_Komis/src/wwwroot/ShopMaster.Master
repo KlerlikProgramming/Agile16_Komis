@@ -55,9 +55,10 @@
             <asp:Label ID="admin" runat="server"></asp:Label>
         </div>
         <div id="AddressBar" class="AddressBar">
-            <a href="<%Page.ResolveUrl("~/default.aspx");%>">Strona tytułowa</a>
-            <a href="<%Page.ResolveUrl("~/index.aspx");%>">Sklep</a>
-            <a href="<%Page.ResolveUrl("~/advancedSearch.aspx");%>">Wyszukiwanie zaawansowane</a>
+            <a href="index.aspx">Strona tytułowa</a>
+            <a href="ShopPage.aspx">Sklep</a>
+            <a href="advancedSearch.aspx">Wyszukiwanie zaawansowane</a>
+            <a href="contact.aspx">Kontakt</a>
 
         </div>
         <div id ="searcher" onload="searcherOnLoad">

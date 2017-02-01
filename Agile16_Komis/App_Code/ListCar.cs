@@ -9,6 +9,9 @@ namespace Agile16_Komis.App_Code
     {
         public static List<Car> listCar = new List<Car>();
 
+        public static string[] columnHeader = { "Model", "Marka", "Rok produkcji", "Typ silnika", "Pojemność silnika", "Typ skrzyni biegów", "Ilość biegów", "Podwozie", "Kolor", "Cena" };
+
+
         public static int idCar = 0;
 
         public static bool AddCar(Car car)
@@ -33,6 +36,11 @@ namespace Agile16_Komis.App_Code
             IEnumerable<Car> temp = listCar.OrderByDescending(x => x.DateAdded).Take(numberOfCar);
 
             return temp.ToList();
+        }
+
+        public static List<Car> GetAllOffer()
+        {
+            return listCar;
         }
 
         public static void ClearList()
