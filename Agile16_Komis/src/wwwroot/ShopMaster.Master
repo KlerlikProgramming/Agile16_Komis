@@ -6,38 +6,7 @@
   <link rel="stylesheet" type="text/css" href="~/src/style/Style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-        $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#searchInput" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
-<html>
+  <html>
 
 <head runat="server">
     <title>Komis internetowy "Płacz, płać, jedź i popłacz jeszcze trochę"</title>

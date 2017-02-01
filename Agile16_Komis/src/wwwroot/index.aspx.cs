@@ -62,6 +62,10 @@ namespace Agile16_Komis.src.wwwroot
             carsDataGridView.DataSource = dt;
             carsDataGridView.DataBind();
         }
+
+        public void AddOfferButtonAction (object sender, EventArgs e) {
+            Server.Transfer("AddOffer.aspx");
+        }
         
     }
 }
