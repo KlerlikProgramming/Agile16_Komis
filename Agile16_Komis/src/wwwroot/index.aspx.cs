@@ -18,7 +18,7 @@ namespace Agile16_Komis.src.wwwroot
         {
             if(!IsPostBack)
             {
-                list = ListCar.GetLatestOffer(numberOfCar);
+                
                 SetInitialRow();
             }
         }
@@ -26,8 +26,8 @@ namespace Agile16_Komis.src.wwwroot
 
         protected void SetInitialRow()
         {
-            
 
+            list = ListCar.GetLatestOffer(numberOfCar);
             DataTable dt = new DataTable();
             DataRow dr = null;
             for (int i = 0; i < ListCar.columnHeader.Count(); i++)
@@ -61,7 +61,8 @@ namespace Agile16_Komis.src.wwwroot
         protected void carsDataGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridView gv = sender as GridView;
-            Server.Transfer("offer.aspx?id=0"/*+list.ElementAt(gv.SelectedIndex).ID.ToString()*/);
+            list = ListCar.GetLatestOffer(numberOfCar);
+            Server.Transfer("offer.aspx?id=" + list.ElementAt(gv.SelectedIndex).ID.ToString());
         }
     }
 }
